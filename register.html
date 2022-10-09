@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-registracion</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="/assets/Picture1.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="header">
+            <h3 class="title">Registrate en jabiya</h3>
+            <span class="description">Introduzca su informacion para crear usuario</span>
+        </div>
+        <div class="item">
+            <input id="name" type="text" placeholder="Nombre">
+        </div>
+        <div class="item">
+            <input id="phone" type="text" placeholder="Telefono">
+        </div>
+        <div class="item">
+            <input id="store" type="text" placeholder="Colmado">
+        </div>
+        <div class="item">
+            <input id="citiesField" onclick="showCities()"  onkeyup="getCities()" type="text" placeholder="Ciudad">
+            <ul id="cities" class="list"></ul>
+        </div>
+        <div class="item">
+            <input id="sectorField" onclick="showSectors()" onkeyup="getSectors()" type="text" placeholder="Sector">
+            <ul id="sectors" class="list">
+            </ul>
+        </div>
+        <div class="btn">
+            <div id="loader" class="loader-container">
+                <div class="loader"></div>
+                <p>Registrando usuario</p>
+            </div>
+            <div id="success" class="success-container">
+                <p>Usuario registrado exitosamente</p>
+            </div>
+            <button onclick="CreateUser()" id="btn_add">Registrarse</button>
+            <!-- <a href="/user.html">Ver Usuario</a> -->
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
