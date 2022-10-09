@@ -7,41 +7,14 @@
     <title>Endpoint</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <div class="logo">
-        <img src="/assets/Picture1.jpg" alt="">
-    </div>
-    <div class="container">
-        <div class="header">
-            <h3 class="title">Registrate en jabiya</h3>
-            <span class="description">Introduzca su informacion para crear usuario</span>
-        </div>
-        <div class="item">
-            <input id="name" type="text" placeholder="Nombre">
-        </div>
-        <div class="item">
-            <input id="phone" type="text" placeholder="Telefono">
-        </div>
-        <div class="item">
-            <input id="store" type="text" placeholder="Colmado">
-        </div>
-        <div class="item">
-            <input id="sector" type="text" placeholder="Sector">
-        </div>
+<body class="body-splash">
+    <div class="splash">
+        <img class="all-screen" src="/assets/Banner Jabiya Explicativo 1054x512.png" alt="" srcset="">
+        <img class="small-screen" src="/assets/ejemplo boton verde.jpg" alt="" srcset="">
         <div class="btn">
-            <div id="loader" class="loader-container">
-                <div class="loader"></div>
-                <p>Registrando usuario</p>
-            </div>
-            <div id="success" class="success-container">
-                <p>Usuario registrado exitosamente</p>
-            </div>
-            <button id="btn_add">Registrarse</button>
-            <!-- <a href="/user.html">Ver Usuario</a> -->
+            <button onclick="navigate('register.html')">REGISTRESE</button>
         </div>
     </div>
-
-
     <script src="/script.js"></script>
 
 </body>
