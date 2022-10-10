@@ -822,11 +822,13 @@ function showCities(value = null){
 }
 
 
-function showSectors(){
+function showSectors(value = null){
     let sectorsDom = document.getElementById('sectors')
     sectorsDom.style.display = 'block'
+    let sectorsToShow
+    if(value) sectorsToShow = value
+    else sectorsToShow = sectors.filter(sector => sector?.cityId == currentCity?.id)
     sectorsDom.innerHTML = '' 
-    let sectorsToShow = sectors.filter(sector => sector?.cityId == currentCity?.id)
     for (let i = 0; i < sectorsToShow.length; i++) {
         const sector = sectorsToShow[i];
         let text  = `<li class="opt" onclick="setSector(${sector.id})">${sector.name}</li>`
@@ -912,7 +914,7 @@ function CreateUser(){
         loader.style.display = "flex";
             
         let url = "https://wbqn8dzqcf.execute-api.us-east-1.amazonaws.com/user"
-        let json = { "clientName": nameOfClient, "phone": phone, "salesperson": store, "sector": sector, "city": city, "province": province }
+        let json = { "owner": nameOfClient, "phone": phone, "storeName": store, "sector": sector, "city": city, "province": province }
 
         fetch(url, {
         method: "POST",
@@ -953,9 +955,11 @@ function getProvinces () {
     var x = document.getElementById("provincesField").value;
     let provincesAvailable = provinces.filter(province =>  province.name.toLowerCase().includes(x.toLowerCase()))
 
+
+
     if(provincesAvailable.length > 0){
         provincesDom.style.display = 'block'
-        showCities(provincesAvailable)
+        showProvinces(provincesAvailable)
     }else{
         provincesDom.style.display = 'none'   
     }
@@ -975,8 +979,9 @@ function getCities () {
 }
 
 function getSectors(){
-    var x = document.getElementById("sectorsField").value;
+    var x = document.getElementById("sectorField").value;
     let sectorsAvailable = sectors.filter(sector =>  sector.name.toLowerCase().includes(x.toLowerCase()))
+    console.log(sectorsAvailable)
 
     if(sectorsAvailable.length > 0){
         sectorsDom.style.display = 'block'
