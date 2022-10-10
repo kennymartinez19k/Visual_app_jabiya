@@ -992,22 +992,25 @@ function navigate(name){
 
 
 function validate(nameOfClient, phone, store, province, city, sector){
-
-    let currentProvince = provinces.find(x => x.name == province)
-
-    if(currentProvince?.id == 1){
-        return {
-            completed: nameOfClient && phone && store && city && sector,
-            provinceId: currentProvince?.id
+    try{
+        let currentProvince = provinces.find(x => x.name == province)
+    
+        if(currentProvince?.id == 1){
+            return {
+                completed: nameOfClient && phone && store && city && sector,
+                provinceId: currentProvince?.id
+            }
         }
-    }
-    else if(currentProvince.id > 1){
-        return {
-            completed: nameOfClient && phone && store ,
-            provinceId: currentProvince.id
+        else if(currentProvince.id > 1){
+            return {
+                completed: nameOfClient && phone && store ,
+                provinceId: currentProvince.id
+            }
         }
-    }
-    else{
+        else{
+            return {completed: false}
+        }       
+    }catch(err){
         return {completed: false}
     }
 }
