@@ -12,6 +12,9 @@
         <img src="/assets/Picture1.jpg" alt="">
     </div>
     <div class="container">
+        <div class="sign-up">
+            <img src="./assets/Jabiya-sign-up.png" alt="">
+        </div>
         <div class="header">
             <h3 class="title">Registrate en jabiya</h3>
             <span class="description">Introduzca su informacion para crear usuario</span>
@@ -26,10 +29,14 @@
             <input id="store" type="text" placeholder="Colmado">
         </div>
         <div class="item">
+            <input id="provincesField" onclick="showProvinces()"  onkeyup="getProvinces()" type="text" placeholder="Provincia">
+            <ul id="provinces" class="list"></ul>
+        </div>
+        <div class="item" id="city-container">
             <input id="citiesField" onclick="showCities()"  onkeyup="getCities()" type="text" placeholder="Ciudad">
             <ul id="cities" class="list"></ul>
         </div>
-        <div class="item">
+        <div class="item" id="sector-container">
             <input id="sectorField" onclick="showSectors()" onkeyup="getSectors()" type="text" placeholder="Sector">
             <ul id="sectors" class="list">
             </ul>

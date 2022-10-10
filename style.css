@@ -18,11 +18,12 @@ body{
 
 .splash{
     width: 95%;
-    margin: 0px 20px;
+    margin: 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
+    position: relative;
 }
 
 .splash img{
@@ -35,12 +36,19 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: end;
+ 
 }
 
-.btn button {
+.btn button, .btn a {
     width: 250px;
     border-radius: 5px;
     background-color: #1a9600;
+    font-weight: 600 ;
+}
+.btn-splash{
+    background-color: #92d809 !important;
+    box-shadow: 0px 0px 1px #000;
+
 }
 
 
@@ -53,6 +61,10 @@ body{
     min-width: 100px;
     max-width: 400px;
     margin-right: 120px
+}
+
+.sign-up{
+    display: none;
 }
 .container{
     margin: 10px 40px 10px;
@@ -85,11 +97,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.btn a{
-    font-size: 12px;
-    margin-top: 15px;
-    text-decoration: none;
-}
+
 
 button{
     background-color: #3a8600;
@@ -150,7 +158,22 @@ button{
     .splash .btn button{
         width: 100%;
     }
+    .splash .btn{
+        width: 80%;
+        position: absolute;
+        bottom: 30px;
+        max-width: 300px;
+    }
     
+    .sign-up{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sign-up img{
+        width: 80%;
+        min-width: 250px
+    }
 }
 
 @media (max-width: 380px) {
@@ -237,4 +260,8 @@ button{
     font-size: 12px;
     border-bottom: 1px solid #ccc;
     padding: 10px 0px;
+  }
+
+  #city-container, #sector-container{
+    display: none;
   }

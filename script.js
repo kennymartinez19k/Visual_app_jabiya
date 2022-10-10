@@ -1,7 +1,133 @@
 const citiesDom = document.getElementById('cities')
 const sectorsDom = document.getElementById('sectors')
+const provincesDom = document.getElementById('provinces')
+
 let currentCity;
 let currentSector;
+let currentProvince
+
+let provinces = [
+    {
+        "id": 1,
+        "name": "Gran Santo Domingo"
+    },
+    {
+        "id": 2,
+        "name": "Azua"
+    },
+    {
+        "id": 3,
+        "name": "Bahoruco"
+    },
+    {
+        "id": 4,
+        "name": "Barahona"
+    },
+    {
+        "id": 5,
+        "name": "Dajabon"
+    },
+    {
+        "id": 6,
+        "name": "El Seybo"
+    },
+    {
+        "id": 7,
+        "name": "Elias Piña"
+    },
+    {
+        "id": 8,
+        "name": "Espaillat"
+    },
+    {
+        "id": 9,
+        "name": "Hato Mayor"
+    },
+    {
+        "id": 10,
+        "name": "Hermanas Mirabal"
+    },
+    {
+        "id": 11,
+        "name": "Independencia"
+    },
+    {
+        "id": 12,
+        "name": "La Altagracia"
+    },
+    {
+        "id": 13,
+        "name": "La Romana"
+    },
+    {
+        "id": 14,
+        "name": "La Vega"
+    },
+    {
+        "id": 15,
+        "name": "Maria Trinidad Sanchez"
+    },
+    {
+        "id": 16,
+        "name": "Monseñor Noel"
+    },
+    {
+        "id": 17,
+        "name": "Monte Plata"
+    },
+    {
+        "id": 18,
+        "name": "MonteCristi"
+    },
+    {
+        "id": 19,
+        "name": "Pedernales"
+    },
+    {
+        "id": 20,
+        "name": "Peravia"
+    },
+    {
+        "id": 21,
+        "name": "Puerto Plata"
+    },
+    {
+        "id": 22,
+        "name": "Samana"
+    },
+    {
+        "id": 23,
+        "name": "San Cristobal"
+    },
+    {
+        "id": 24,
+        "name": "San Jose De Ocoa"
+    },
+    {
+        "id": 25,
+        "name": "San Juan"
+    },
+    {
+        "id": 26,
+        "name": "San Pedro De Macoris"
+    },
+    {
+        "id": 27,
+        "name": "Sanchez Ramirez"
+    },
+    {
+        "id": 28,
+        "name": "Santiago"
+    },
+    {
+        "id": 29,
+        "name": "Santiago Rodriguez"
+    },
+    {
+        "id": 30,
+        "name": "Valverde"
+    }
+]
 
 const cities = [
     {
@@ -654,6 +780,7 @@ let sectors = [
     }
 ]
 
+
 let headers = {method: 'POST'}
 
 const btn_add = document.getElementById("btn_add");
@@ -670,11 +797,14 @@ window.onload = function(){
       if(e.target.id !== 'sectorField'){
         sectorsDom.style.display = 'none';
       }
+      if(e.target.id !== 'provincesField'){
+        provincesDom.style.display = 'none';
+      }
     };
 };
 
-
 function init(){
+    clear()
 }
 
 function showCities(value = null){
@@ -704,6 +834,31 @@ function showSectors(){
     }
 }
 
+
+function showProvinces(value = null){
+    provincesDom.style.display = 'block'
+    let provincesToShow
+    if(value) provincesToShow = value
+    else provincesToShow = provinces
+    provincesDom.innerHTML = '' 
+    
+    for (let i = 0; i < provincesToShow.length; i++) {
+        const province = provincesToShow[i];
+        let text  = ` <option class="opt" onclick="setProvince(${province.id})">${province.name}</option>`
+        provincesDom.insertAdjacentHTML( 'beforeend', text );
+    }
+}
+
+
+function statusCityAndSectors (value) {
+    let city = document.getElementById('city-container')
+    let sector = document.getElementById('sector-container')
+    city.style.display = value
+    sector.style.display = value
+
+}
+
+
 function setCity(id){
     currentSector = null
     document.getElementById("sectorField").value = null;
@@ -717,6 +872,27 @@ function setSector(id){
     document.getElementById("sectorField").value = currentSector.name;
 }
 
+function setProvince(id){
+    currentSector = null
+    document.getElementById("sectorField").value = null;
+    currentCity = null
+    document.getElementById("citiesField").value = null;
+
+
+
+    if(id == 1){
+        statusCityAndSectors('flex')
+    }else{
+        statusCityAndSectors('none')
+    }
+    currentProvince = null
+    document.getElementById("provincesField").value = null;
+
+    currentProvince = provinces.find(x => x.id == id)
+    document.getElementById("provincesField").value = currentProvince.name;
+}
+
+
 
 function CreateUser(){   
     var loader = document.getElementById("loader");
@@ -724,44 +900,39 @@ function CreateUser(){
     
     let nameOfClient = document.getElementById('name').value
     let phone = document.getElementById('phone').value
-    let sector = document.getElementById('sectorField').value
     let store = document.getElementById('store').value
+    let province = document.getElementById('provincesField').value
     let city = document.getElementById('citiesField').value
-    currentCity = null
-    currentSector = null
+    let sector = document.getElementById('sectorField').value
 
-    
-    if(nameOfClient && phone && sector && store && city){
+
+    let isValidate = validate(nameOfClient, phone, store, province, city, sector)
+    console.log(isValidate)
+    if(isValidate.completed){
         loader.style.display = "flex";
-        
             
-          let url = "https://wbqn8dzqcf.execute-api.us-east-1.amazonaws.com/user"
-          let json = { "clientName": nameOfClient, "phone": phone, "salesperson": store, "sector": sector, "municipality": city }
+        let url = "https://wbqn8dzqcf.execute-api.us-east-1.amazonaws.com/user"
+        let json = { "clientName": nameOfClient, "phone": phone, "salesperson": store, "sector": sector, "city": city, "province": province }
 
-          console.log(json)
-          fetch(url, {
-            method: "POST",
-            body: JSON.stringify(json),
-            headers: {"Content-type": "application/json; charset=UTF-8", "withCredentials": true}
-            })
-            .then(response => response.json()) 
-            .then(json => {
-                loader.style.display = "none";
-                success.style.display = "block"
+        fetch(url, {
+        method: "POST",
+        body: JSON.stringify(json),
+        headers: {"Content-type": "application/json; charset=UTF-8", "withCredentials": true}
+        })
+        .then(response => response.json()) 
+        .then(json => {
+            loader.style.display = "none";
 
+            clear()
 
-                document.getElementById('name').value = null
-                document.getElementById('phone').value = null
-                document.getElementById('sectorField').value = null
-                document.getElementById('store').value = null
-                document.getElementById('citiesField').value = null
+            if(isValidate.provinceId == 1){
+                window.location.href = "dashboard-register.html"
+            }else{
+                window.location.href = "dashboard-pre-register.html"
+            } 
 
-                setTimeout(() => {
-                    success.style.display = "none"
-                }, 4000)
-
-                console.log(json)
-            } );
+            console.log(json)
+        } );
     }else{
         alert("Debe llenar todos los campos")
     }
@@ -774,6 +945,22 @@ function getUser(){
         .then(response => response.json()) 
         .then(json => console.log(json));
 }
+
+
+
+
+function getProvinces () {
+    var x = document.getElementById("provincesField").value;
+    let provincesAvailable = provinces.filter(province =>  province.name.toLowerCase().includes(x.toLowerCase()))
+
+    if(provincesAvailable.length > 0){
+        provincesDom.style.display = 'block'
+        showCities(provincesAvailable)
+    }else{
+        provincesDom.style.display = 'none'   
+    }
+}
+
 
 function getCities () {
     var x = document.getElementById("citiesField").value;
@@ -801,6 +988,39 @@ function getSectors(){
 
 function navigate(name){
     window.location.href = name
+}
+
+
+function validate(nameOfClient, phone, store, province, city, sector){
+
+    let currentProvince = provinces.find(x => x.name == province)
+
+    if(currentProvince?.id == 1){
+        return {
+            completed: nameOfClient && phone && store && city && sector,
+            provinceId: currentProvince?.id
+        }
+    }
+    else if(currentProvince.id > 1){
+        return {
+            completed: nameOfClient && phone && store ,
+            provinceId: currentProvince.id
+        }
+    }
+    else{
+        return {completed: false}
+    }
+}
+
+function clear(){
+    currentCity = null
+    currentSector = null
+    currentProvince = null
+    document.getElementById('name').value = null
+    document.getElementById('phone').value = null
+    document.getElementById('sectorField').value = null
+    document.getElementById('store').value = null
+    document.getElementById('citiesField').value = null
 }
 
 init()
