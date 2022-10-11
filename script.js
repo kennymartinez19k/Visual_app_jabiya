@@ -1038,6 +1038,15 @@ function validate(value){
     document.getElementById('fail').style.display = "none"
 
     let provinceToCheck = document.getElementById("provincesField").value
+    let cityToCheck = document.getElementById("citiesField").value
+
+    console.log(cityToCheck)
+
+    if(cities.find(city => city.name.toLowerCase() == cityToCheck.toLowerCase())){
+        document.getElementById('sector-container').style.display = "flex"
+    }else{
+        document.getElementById('sector-container').style.display = "none"
+    }
 
     if(value ==  "citiesField" || value == "sectorField"){
 
