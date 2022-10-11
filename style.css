@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: column;
     align-items: center;
+    margin: 0px;
 }
 .small-screen{
     display: none;
@@ -22,11 +23,11 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 85%;
 }
 
 .splash img{
     width: 100%;
-    height: 100vh;
 }
 
 .splash .btn{
@@ -57,12 +58,14 @@ body{
 
 .logo{
     width: 40%;
+    display: flex;
+    justify-content: end;
 }
 .logo img{
     width: 90%;
     min-width: 100px;
     max-width: 400px;
-    margin-right: 120px
+    margin-right: 50px;
 }
 
 .sign-up{
@@ -195,7 +198,8 @@ button{
         width: 100%;
     }
     .splash img{
-        max-width: 340px
+        height: 100vh;
+        width: auto;
 
     }
     .splash .btn button{
