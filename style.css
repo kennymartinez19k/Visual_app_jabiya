@@ -70,7 +70,7 @@ body{
     justify-content: center;
 }
 .sign-up img{
-    width: 80%;
+    width: 70%;
 }
 
 .container{
@@ -143,7 +143,8 @@ button{
 .header .description{
     font-size: 12px;
     margin-top: 5px;
-    color: rgb(71, 71, 71)
+    color: rgb(71, 71, 71);
+    font-weight: 400;
 }
 
 @media (max-width: 800px){

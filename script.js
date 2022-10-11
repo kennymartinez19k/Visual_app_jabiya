@@ -824,7 +824,7 @@ function showCities(value = null){
     
     for (let i = 0; i < citiesToshow.length; i++) {
         const city = citiesToshow[i];
-        let text  = ` <option class="opt" onclick="setCity(${city.id})">${city.name}</option>`
+        let text  = ` <li class="opt" onclick="setCity(${city.id})">${city.name}</li>`
         citiesDom.insertAdjacentHTML( 'beforeend', text );
     }
 }
@@ -869,7 +869,7 @@ function showProvinces(value = null){
     
     for (let i = 0; i < provincesToShow.length; i++) {
         const province = provincesToShow[i];
-        let text  = ` <option class="opt" onclick="setProvince(${province.id})">${province.name}</option>`
+        let text  = ` <li class="opt" onclick="setProvince(${province.id})">${province.name}</li>`
         provincesDom.insertAdjacentHTML( 'beforeend', text );
     }
 }
