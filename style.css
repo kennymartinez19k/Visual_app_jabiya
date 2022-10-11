@@ -10,7 +10,7 @@ body{
 .body-splash{
     display: flex;
     justify-content: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 0px;
 }
 .small-screen{
@@ -27,7 +27,7 @@ body{
 }
 
 .splash img{
-    width: 100%;
+    width: 95%;
 }
 
 .splash .btn{
@@ -37,7 +37,7 @@ body{
     flex-direction: row;
     justify-content: end;
     bottom: 30px;
-    right: 30px;
+    right: 50px;
     position: absolute;
   
 }
@@ -198,7 +198,7 @@ button{
         width: 100%;
     }
     .splash img{
-        height: 100vh;
+        height: 95vh;
         width: auto;
 
     }
@@ -206,7 +206,7 @@ button{
         width: 100%;
     }
     .splash .btn{
-        width: 80% !important;
+        width: 50% !important;
         position: absolute;
         bottom: 30px;
         max-width: 300px;
