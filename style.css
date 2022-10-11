@@ -11,14 +11,12 @@ body{
     display: flex;
     justify-content: column;
     align-items: center;
-    height: 95vh;
 }
 .small-screen{
     display: none;
 }
 
 .splash{
-    height: 100vh;
     margin: 0px 10px;
     display: flex;
     flex-direction: column;
@@ -27,6 +25,7 @@ body{
 }
 
 .splash img{
+    width: 100vh;
     height: 100vh;
 }
 
@@ -35,13 +34,11 @@ body{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     bottom: 30px;
+    right: 30px;
     position: absolute;
-    right: 0px;
-    left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+  
 }
 
 .btn button, .btn a {
@@ -175,6 +172,13 @@ button{
         box-shadow: none;
         
     }
+    .splash{
+        height: 95vh;
+
+    }
+    .body-splash{
+        height: 100vh;
+    }
     .description{
         margin-top: 5px ;
     }
@@ -192,6 +196,7 @@ button{
     }
     .splash img{
         max-width: 340px
+
     }
     .splash .btn button{
         width: 100%;
