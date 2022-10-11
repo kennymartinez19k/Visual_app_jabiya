@@ -23,7 +23,7 @@
             <span class="invalid" id="name-invalid">Debe introducir un nombre</span>
         </div>
         <div class="item">
-            <input autocomplete="off" id="phone" type="number" onkeyup="validate('phone')" placeholder="Telefono (809 XXX-XXXX)">
+            <input autocomplete="off" id="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="number" onkeyup="validate('phone')" placeholder="Telefono (809 XXX-XXXX)">
             <span class="invalid" id="phone-invalid">Introduzca un numero de telefono</span>
 
         </div>
