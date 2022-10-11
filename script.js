@@ -505,281 +505,285 @@ let sectors = [
         "cityId": 1
     },
     {
-        "name": "espacio",
-        "id": 72
-    },
-    {
-        "id": 73,
+        "id": 72,
         "name": "Bayona",
         "cityId": 2
     },
     {
-        "id": 74,
+        "id": 73,
         "name": "Buenos Aires",
         "cityId": 2
     },
     {
-        "id": 75,
+        "id": 74,
         "name": "El Abanico",
         "cityId": 2
     },
     {
-        "id": 76,
+        "id": 75,
         "name": "El Libertador",
         "cityId": 2
     },
     {
-        "id": 77,
+        "id": 76,
         "name": "Enriquillo",
         "cityId": 2
     },
     {
-        "id": 78,
+        "id": 77,
         "name": "Ensanche Altagracia",
         "cityId": 2
     },
     {
-        "id": 79,
+        "id": 78,
         "name": "Hato Nuevo",
         "cityId": 2
     },
     {
-        "id": 80,
+        "id": 79,
         "name": "Km. 12 Av. Independecia / Calle Isabel",
         "cityId": 2
     },
     {
-        "id": 81,
+        "id": 80,
         "name": "Km. 13 Carretera Sánchez / Av.Independencia",
         "cityId": 2
     },
     {
-        "id": 82,
+        "id": 81,
         "name": "Km 14",
         "cityId": 2
     },
     {
-        "id": 83,
+        "id": 82,
         "name": "La Venta",
         "cityId": 2
     },
     {
-        "id": 84,
+        "id": 83,
         "name": "Las Caobas",
         "cityId": 2
     },
     {
-        "id": 85,
+        "id": 84,
         "name": "Las Palmas",
         "cityId": 2
     },
     {
-        "id": 86,
+        "id": 85,
         "name": "Manoguayabo",
         "cityId": 2
     },
     {
-        "id": 87,
+        "id": 86,
         "name": "Santa Cruz",
         "cityId": 3
     },
     {
-        "id": 88,
+        "id": 87,
         "name": "Sabana Perdida",
         "cityId": 3
     },
     {
-        "id": 89,
+        "id": 88,
         "name": "Villa Mella",
         "cityId": 3
     },
     {
-        "id": 90,
+        "id": 89,
         "name": "Loma Del Caliche",
         "cityId": 3
     },
     {
-        "id": 91,
+        "id": 90,
         "name": "Marañon",
         "cityId": 3
     },
     {
-        "id": 92,
+        "id": 91,
         "name": "Lorencin",
         "cityId": 3
     },
     {
-        "id": 93,
+        "id": 92,
         "name": "Saleta",
         "cityId": 3
     },
     {
-        "id": 94,
+        "id": 93,
         "name": "La Bomba",
         "cityId": 3
     },
     {
-        "id": 95,
+        "id": 94,
         "name": "El Bonito",
         "cityId": 3
     },
     {
-        "id": 96,
+        "id": 95,
         "name": "Los Barrancones",
         "cityId": 3
     },
     {
-        "id": 97,
+        "id": 96,
         "name": "El Mamey",
         "cityId": 3
     },
     {
-        "id": 98,
+        "id": 97,
         "name": "Hatillo",
         "cityId": 3
     },
     {
-        "id": 99,
+        "id": 98,
         "name": "Guaricano",
         "cityId": 3
     },
     {
-        "id": 100,
+        "id": 99,
         "name": "Ponce",
         "cityId": 3
     },
     {
-        "id": 101,
+        "id": 100,
         "name": "La Rafaelita",
         "cityId": 3
     },
     {
-        "id": 102,
+        "id": 101,
         "name": "Mala Vuelta",
         "cityId": 3
     },
     {
-        "id": 103,
+        "id": 102,
         "name": "Alma Rosa",
         "cityId": 4
     },
     {
-        "id": 104,
+        "id": 103,
         "name": "Brisa Oriental",
         "cityId": 4
     },
     {
-        "id": 105,
+        "id": 104,
         "name": "Brisas del Este",
         "cityId": 4
     },
     {
-        "id": 106,
+        "id": 105,
         "name": "Cancino",
         "cityId": 4
     },
     {
-        "id": 107,
+        "id": 106,
         "name": "Cancino Fuera",
         "cityId": 4
     },
     {
-        "id": 108,
+        "id": 107,
         "name": "Ciudad del Almirante",
         "cityId": 4
     },
     {
-        "id": 109,
+        "id": 108,
         "name": "Ciudad Satelite",
         "cityId": 4
     },
     {
-        "id": 110,
+        "id": 109,
         "name": "Ensanche Ozama",
         "cityId": 4
     },
     {
-        "id": 111,
+        "id": 110,
         "name": "Francisco Alberto Peña Camaño",
         "cityId": 4
     },
     {
-        "id": 112,
+        "id": 111,
         "name": "Hainamosa",
         "cityId": 4
     },
     {
-        "id": 113,
+        "id": 112,
         "name": "Jose de Mendoza",
         "cityId": 4
     },
     {
-        "id": 114,
+        "id": 113,
         "name": "La Isabelita",
         "cityId": 4
     },
     {
-        "id": 115,
+        "id": 114,
         "name": "La Ureña",
         "cityId": 4
     },
     {
-        "id": 116,
+        "id": 115,
         "name": "Las Americas",
         "cityId": 4
     },
     {
-        "id": 117,
+        "id": 116,
         "name": "Los Frailes",
         "cityId": 4
     },
     {
-        "id": 118,
+        "id": 117,
         "name": "Los Mameyes",
         "cityId": 4
     },
     {
-        "id": 119,
+        "id": 118,
         "name": "Los Mina Norte",
         "cityId": 4
     },
     {
-        "id": 120,
+        "id": 119,
         "name": "Los Mina Sur",
         "cityId": 4
     },
     {
-        "id": 121,
+        "id": 120,
         "name": "Los Tres Ojos",
         "cityId": 4
     },
     {
-        "id": 122,
+        "id": 121,
         "name": "Los Trinitarios",
         "cityId": 4
     },
     {
-        "id": 123,
+        "id": 122,
         "name": "Mendoza",
         "cityId": 4
     },
     {
-        "id": 124,
+        "id": 123,
         "name": "Tamarindo",
         "cityId": 4
     },
     {
-        "id": 125,
+        "id": 124,
         "name": "Villa Duarte",
         "cityId": 4
     },
     {
-        "id": 126,
+        "id": 125,
         "name": "Villa Faro",
         "cityId": 4
     }
 ]
 
+let ValidateValues = {
+    name: false,
+    phone: false,
+    store: false,
+    provincesField: false,
+    citiesField: false,
+    sectorField: false
+}
 
 let headers = {method: 'POST'}
 
@@ -790,7 +794,6 @@ const citiesField = document.getElementById("citiesField")
 
 window.onload = function(){
     document.onclick = function(e){
-        console.log(e.target.id)
       if(e.target.id !== 'citiesField'){
         citiesDom.style.display = 'none';
       }
@@ -809,8 +812,13 @@ function init(){
 
 function showCities(value = null){
     citiesDom.style.display = 'block'
+    let citiesField = document.getElementById("citiesField").value
+
 
     if(value) citiesToshow = value
+    else if(citiesField){
+        citiesToshow = cities.filter(city => city.name.toLocaleLowerCase().includes(citiesField.toLocaleLowerCase()) )
+    }
     else citiesToshow = cities
     citiesDom.innerHTML = '' 
     
@@ -826,7 +834,13 @@ function showSectors(value = null){
     let sectorsDom = document.getElementById('sectors')
     sectorsDom.style.display = 'block'
     let sectorsToShow
+    let sectorField = document.getElementById("sectorField").value
+
+
     if(value) sectorsToShow = value
+    else if(sectorField){
+        sectorsToShow = sectors.filter(sector => sector.name.toLocaleLowerCase().includes(sectorField.toLocaleLowerCase()) )
+    }
     else sectorsToShow = sectors.filter(sector => sector?.cityId == currentCity?.id)
     sectorsDom.innerHTML = '' 
     for (let i = 0; i < sectorsToShow.length; i++) {
@@ -840,8 +854,17 @@ function showSectors(value = null){
 function showProvinces(value = null){
     provincesDom.style.display = 'block'
     let provincesToShow
+    let provincesField = document.getElementById("provincesField").value
+
     if(value) provincesToShow = value
+    else if(provincesField){
+        console.log(provincesField)
+        console.log(provinces)
+        provincesToShow = provinces.filter(province => province.name.toLocaleLowerCase().includes(provincesField.toLocaleLowerCase()) )
+    }
     else provincesToShow = provinces
+    console.log(provincesToShow)
+
     provincesDom.innerHTML = '' 
     
     for (let i = 0; i < provincesToShow.length; i++) {
@@ -864,24 +887,29 @@ function statusCityAndSectors (value) {
 function setCity(id){
     currentSector = null
     document.getElementById("sectorField").value = null;
-
+    
     currentCity = cities.find(x => x.id == id)
     document.getElementById("citiesField").value = currentCity.name;
+    validate("citiesField")
 }
 
 function setSector(id){
     currentSector = sectors.find(x => x.id == id)
     document.getElementById("sectorField").value = currentSector.name;
+    validate("sectorField")
 }
 
 function setProvince(id){
+    document.getElementById('citiesField-invalid').style.display = "none"
+    document.getElementById('sectorField-invalid').style.display = "none"
+
     currentSector = null
     document.getElementById("sectorField").value = null;
     currentCity = null
     document.getElementById("citiesField").value = null;
 
 
-
+    
     if(id == 1){
         statusCityAndSectors('flex')
     }else{
@@ -889,17 +917,20 @@ function setProvince(id){
     }
     currentProvince = null
     document.getElementById("provincesField").value = null;
-
+    
     currentProvince = provinces.find(x => x.id == id)
     document.getElementById("provincesField").value = currentProvince.name;
+
+    validate("provincesField")
 }
 
 
 
 function CreateUser(){   
-    var loader = document.getElementById("loader");
-    var success = document.getElementById("success");
+    clearValidate()
     
+    let loader = document.getElementById("loader"); 
+    let catchError = document.getElementById('fail')
     let nameOfClient = document.getElementById('name').value
     let phone = document.getElementById('phone').value
     let store = document.getElementById('store').value
@@ -907,10 +938,11 @@ function CreateUser(){
     let city = document.getElementById('citiesField').value
     let sector = document.getElementById('sectorField').value
 
+    catchError.style.display = "none"
 
-    let isValidate = validate(nameOfClient, phone, store, province, city, sector)
-    console.log(isValidate)
-    if(isValidate.completed){
+    let validate =  isValid()   
+
+    if(validate.completed){
         loader.style.display = "flex";
             
         let url = "https://wbqn8dzqcf.execute-api.us-east-1.amazonaws.com/user"
@@ -921,22 +953,24 @@ function CreateUser(){
         body: JSON.stringify(json),
         headers: {"Content-type": "application/json; charset=UTF-8", "withCredentials": true}
         })
-        .then(response => response.json()) 
+        .then(response => response.json())
         .then(json => {
-            loader.style.display = "none";
-
             clear()
 
-            if(isValidate.provinceId == 1){
+            loader.style.display = "none";
+
+            if(validate.province.id == 1){
                 window.location.href = "dashboard-register.html"
             }else{
                 window.location.href = "dashboard-pre-register.html"
             } 
 
-            console.log(json)
-        } );
-    }else{
-        alert("Debe llenar todos los campos")
+
+        } ).catch(error => {
+            loader.style.display = "none"
+            catchError.style.display = "flex"
+            console.log(error)
+        });
     }
 }
 
@@ -951,7 +985,8 @@ function getUser(){
 
 
 
-function getProvinces () {
+function getProvinces (field = null) {
+    validate(field)
     var x = document.getElementById("provincesField").value;
     let provincesAvailable = provinces.filter(province =>  province.name.toLowerCase().includes(x.toLowerCase()))
 
@@ -966,7 +1001,9 @@ function getProvinces () {
 }
 
 
-function getCities () {
+function getCities (field = null) {
+    validate(field)
+
     var x = document.getElementById("citiesField").value;
     let cityAvailable = cities.filter(city =>  city.name.toLowerCase().includes(x.toLowerCase()))
 
@@ -978,10 +1015,11 @@ function getCities () {
     }
 }
 
-function getSectors(){
+function getSectors(field = null){
+    validate(field)
+
     var x = document.getElementById("sectorField").value;
     let sectorsAvailable = sectors.filter(sector =>  sector.name.toLowerCase().includes(x.toLowerCase()))
-    console.log(sectorsAvailable)
 
     if(sectorsAvailable.length > 0){
         sectorsDom.style.display = 'block'
@@ -996,28 +1034,83 @@ function navigate(name){
 }
 
 
-function validate(nameOfClient, phone, store, province, city, sector){
-    try{
-        let currentProvince = provinces.find(x => x.name == province)
+function validate(value){
+    document.getElementById('fail').style.display = "none"
+
+    let provinceToCheck = document.getElementById("provincesField").value
+
+    if(value ==  "citiesField" || value == "sectorField"){
+
+        if(provinceToCheck != "Gran Santo Domingo"){
+            
+            document.getElementById('citiesField-invalid').style.display = "none"
+            document.getElementById('sectorField-invalid').style.display = "none"
+            ValidateValues["citiesField"] = true
+            ValidateValues["sectorField"] = true
+
+        }else{
+            
+
     
-        if(currentProvince?.id == 1){
-            return {
-                completed: nameOfClient && phone && store && city && sector,
-                provinceId: currentProvince?.id
+            if(value == "citiesField"){
+                let cityToCheck = document.getElementById(value).value
+
+                if(cities.find(city => city.name.toLowerCase() == cityToCheck.toLowerCase())){
+                    ValidateValues[value] = true
+                }else{
+                    ValidateValues[value] = false
+                }
+            }
+        
+            if(value == "sectorField"){
+                let sectorToCheck = document.getElementById(value).value
+
+            
+        
+                if(sectors.find(sector => sector.name.toLowerCase() == sectorToCheck.toLowerCase())){
+                    ValidateValues[value] = true
+                }else{
+                    ValidateValues[value] = false
+                }
             }
         }
-        else if(currentProvince.id > 1){
-            return {
-                completed: nameOfClient && phone && store ,
-                provinceId: currentProvince.id
+
+    }else{
+
+        if(provinceToCheck != "Gran Santo Domingo"){
+            ValidateValues["citiesField"] = true
+            ValidateValues["sectorField"] = true
+        }
+
+        if(value == "provincesField"){
+            if(provinceToCheck == "Gran Santo Domingo"){
+                ValidateValues["citiesField"] = false
+                ValidateValues["sectorField"] = false
+            }
+
+            if(provinces.find(province => province.name.toLowerCase() == provinceToCheck.toLowerCase())){
+                ValidateValues[value] = true
+            }else{
+                ValidateValues[value] = false
+            }
+    
+        }else{
+    
+            let field = document.getElementById(value).value
+        
+            if(!field || field == ''){
+                ValidateValues[value] = false
+            }else{
+                ValidateValues[value] = true
+        
             }
         }
-        else{
-            return {completed: false}
-        }       
-    }catch(err){
-        return {completed: false}
     }
+    
+
+
+    
+
 }
 
 function clear(){
@@ -1029,6 +1122,39 @@ function clear(){
     document.getElementById('sectorField').value = null
     document.getElementById('store').value = null
     document.getElementById('citiesField').value = null
+    document.getElementById('provincesField').value = null
+
+}
+
+function clearValidate(){
+    document.getElementById('name-invalid').style.display = "none"
+    document.getElementById('phone-invalid').style.display = "none"
+    document.getElementById('store-invalid').style.display = "none"
+    document.getElementById('provincesField-invalid').style.display = "none"
+    document.getElementById('citiesField-invalid').style.display = "none"
+    document.getElementById('sectorField-invalid').style.display = "none"
+
+}
+
+function isValid(){
+
+    let values = []
+    
+    for (const property in ValidateValues) {
+        let invalidField = document.getElementById(`${property}-invalid`)
+
+        if(!ValidateValues[property]){
+            invalidField.style.display = "block"
+        }else{
+            invalidField.style.display = "none"
+        }
+
+        values.push(ValidateValues[property])
+    }
+    let province = document.getElementById('provincesField').value
+
+    return {completed: values.every(x => x), province: provinces.find(x => x.name == province)}
+
 }
 
 init()

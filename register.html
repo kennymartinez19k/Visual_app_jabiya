@@ -20,24 +20,32 @@
             <span class="description">Introduzca su informacion para crear usuario</span>
         </div>
         <div class="item">
-            <input id="name" type="text" placeholder="Nombre">
+            <input autocomplete="off" id="name" type="text" onkeyup="validate('name')" placeholder="Nombre">
+            <span class="invalid" id="name-invalid">Debe introducir un nombre</span>
         </div>
         <div class="item">
-            <input id="phone" type="number" placeholder="Telefono">
+            <input autocomplete="off" id="phone" type="number" onkeyup="validate('phone')" placeholder="Telefono">
+            <span class="invalid" id="phone-invalid">Introduzca un numero de telefono</span>
+
         </div>
         <div class="item">
-            <input id="store" type="text" placeholder="Colmado">
+            <input autocomplete="off" id="store" type="text" onkeyup="validate('store')" placeholder="Colmado">
+            <span class="invalid" id="store-invalid">Introduzca un nombre de tienda</span>
+
         </div>
         <div class="item">
-            <input id="provincesField" onclick="showProvinces()"  onkeyup="getProvinces()" type="text" placeholder="Provincia">
+            <input autocomplete="off" id="provincesField" onclick="showProvinces()"  onkeyup="getProvinces('provincesField')" type="text" placeholder="Provincia">
+            <span class="invalid" id="provincesField-invalid">seleccione una provincia valida</span>
             <ul id="provinces" class="list"></ul>
         </div>
         <div class="item" id="city-container">
-            <input id="citiesField" onclick="showCities()"  onkeyup="getCities()" type="text" placeholder="Ciudad">
+            <input autocomplete="off" id="citiesField" onclick="showCities()"  onkeyup="getCities('citiesField')" type="text" placeholder="Ciudad">
+            <span class="invalid" id="citiesField-invalid">seleccione una ciudad valida</span>
             <ul id="cities" class="list"></ul>
         </div>
         <div class="item" id="sector-container">
-            <input id="sectorField" onclick="showSectors()" onkeyup="getSectors()" type="text" placeholder="Sector">
+            <input autocomplete="off" id="sectorField" onclick="showSectors()" onkeyup="getSectors('sectorField')" type="text" placeholder="Sector">
+            <span class="invalid" id="sectorField-invalid">seleccione un sector valido</span>
             <ul id="sectors" class="list">
             </ul>
         </div>
@@ -46,8 +54,10 @@
                 <div class="loader"></div>
                 <p>Registrando usuario</p>
             </div>
-            <div id="success" class="success-container">
-                <p>Usuario registrado exitosamente</p>
+            <div id="fail" class="fail-container">
+                <p class="title">Hubo un error al Crear!!</p>
+                <p class="description">Asegurese de su conexion a internet o Intentelo mas tarde</p>
+
             </div>
             <button onclick="CreateUser()" id="btn_add">Registrarse</button>
             <!-- <a href="/user.html">Ver Usuario</a> -->

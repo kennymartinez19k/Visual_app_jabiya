@@ -83,20 +83,26 @@ body{
     box-shadow: 0px 0px 10px rgb(193, 255, 77);
 }
 .item{
-    margin: 20px 10px ;
+    margin: 20px auto ;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 70%;
 }
 .item input{
     padding: 10px;
-    width: 75%;
+    width: 100%;
     border: 1px solid #959595 ;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 400;
     border-radius: 5px;
     font-family: system-ui;
+}
+input:focus-visible {
+    outline-offset: 0px;
+    outline: none;
+    border: 1px solid #1a9600;
 }
 .btn{
     margin-top: 30px;
@@ -126,7 +132,7 @@ button{
     width: 35%;
     min-width: 75px;
 }
-.title{
+.header .title{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 100;
@@ -134,7 +140,7 @@ button{
     color: #3a8600;
 }
 
-.description{
+.header .description{
     font-size: 12px;
     margin-top: 5px;
     color: rgb(71, 71, 71)
@@ -153,7 +159,7 @@ button{
    
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     .logo{
         display: none;
     }
@@ -204,9 +210,13 @@ button{
         width: 80%;
         min-width: 250px
     }
+    .item{
+        width: 90%;
+    }
 }
 
 @media (max-width: 380px) {
+
     .container{
         height: 100%;
         margin: 0px;
@@ -216,6 +226,10 @@ button{
     }
     .description{
         font-size: 10px;
+    }
+    .header .description {
+        font-size: 10px;
+        font-weight: 400;
     }
     .item input{
         width: 95%;
@@ -294,4 +308,36 @@ button{
 
   #city-container, #sector-container{
     display: none;
+  }
+
+  .invalid{
+    font-size: 10px;
+    color: red;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 100%;
+    display: none;
+  }
+  .fail-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    background-color: #c70000c7;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 275px;
+  }
+  .fail-container .title{
+    font-size: 12px;
+    margin: 0px;
+  }
+  .fail-container .description{
+    font-size: 10px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 5px;
   }
