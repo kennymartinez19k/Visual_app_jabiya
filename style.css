@@ -318,6 +318,7 @@ button{
     font-size: 12px;
     border-bottom: 1px solid #ccc;
     padding: 10px 0px;
+    font-weight: 400;
   }
 
   #city-container, #sector-container{

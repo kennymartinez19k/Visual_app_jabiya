@@ -1132,6 +1132,16 @@ function clear(){
     document.getElementById('store').value = null
     document.getElementById('citiesField').value = null
     document.getElementById('provincesField').value = null
+    ValidateValues = {
+        name: false,
+        phone: false,
+        store: false,
+        provincesField: false,
+        citiesField: false,
+        sectorField: false
+    }
+    document.getElementById('city-container').style.display = "none"
+    document.getElementById('sector-container').style.display = "none"
 
 }
 
