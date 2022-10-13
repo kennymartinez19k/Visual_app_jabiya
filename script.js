@@ -33,7 +33,7 @@ let provinces = [
     },
     {
         "id": 7,
-        "name": "Elias Piña"
+        "name": "Elías Piña"
     },
     {
         "id": 8,
@@ -65,7 +65,7 @@ let provinces = [
     },
     {
         "id": 15,
-        "name": "Maria Trinidad Sanchez"
+        "name": "Maria Trinidad Sánchez"
     },
     {
         "id": 16,
@@ -77,7 +77,7 @@ let provinces = [
     },
     {
         "id": 18,
-        "name": "MonteCristi"
+        "name": "Monte Cristi"
     },
     {
         "id": 19,
@@ -97,7 +97,7 @@ let provinces = [
     },
     {
         "id": 23,
-        "name": "San Cristobal"
+        "name": "San Cristóbal"
     },
     {
         "id": 24,
@@ -113,7 +113,7 @@ let provinces = [
     },
     {
         "id": 27,
-        "name": "Sanchez Ramirez"
+        "name": "Sánchez Ramírez"
     },
     {
         "id": 28,
@@ -121,7 +121,7 @@ let provinces = [
     },
     {
         "id": 29,
-        "name": "Santiago Rodriguez"
+        "name": "Santiago Rodríguez"
     },
     {
         "id": 30,
@@ -132,7 +132,7 @@ let provinces = [
 const cities = [
     {
         id: 1,
-        name: 'Districto Nacional'
+        name: 'Distrito Nacional'
     },
     {
         id: 2,
@@ -171,7 +171,7 @@ let sectors = [
     },
     {
         "id": 5,
-        "name": "Atala",
+        "name": "Átala",
         "cityId": 1
     },
     {
@@ -191,12 +191,12 @@ let sectors = [
     },
     {
         "id": 9,
-        "name": "Centro de los Heroes",
+        "name": "Centro de los Héroes",
         "cityId": 1
     },
     {
         "id": 10,
-        "name": "Centro Olimpico",
+        "name": "Centro Olímpico",
         "cityId": 1
     },
     {
@@ -231,7 +231,7 @@ let sectors = [
     },
     {
         "id": 17,
-        "name": "El Millon",
+        "name": "El Millón",
         "cityId": 1
     },
     {
@@ -251,7 +251,7 @@ let sectors = [
     },
     {
         "id": 21,
-        "name": "Ensanche Luperon",
+        "name": "Ensanche Luperón",
         "cityId": 1
     },
     {
@@ -271,7 +271,7 @@ let sectors = [
     },
     {
         "id": 25,
-        "name": "General Anthonio Duverge",
+        "name": "General Anthonio Duvergé",
         "cityId": 1
     },
     {
@@ -291,12 +291,12 @@ let sectors = [
     },
     {
         "id": 29,
-        "name": "Jardin Botanico",
+        "name": "Jardín Botánico",
         "cityId": 1
     },
     {
         "id": 30,
-        "name": "Jardin Zoologico",
+        "name": "Jardín Zoológico",
         "cityId": 1
     },
     {
@@ -351,7 +351,7 @@ let sectors = [
     },
     {
         "id": 41,
-        "name": "Los Cacicazcos",
+        "name": "Los Cacicazgos",
         "cityId": 1
     },
     {
@@ -376,7 +376,7 @@ let sectors = [
     },
     {
         "id": 46,
-        "name": "Los Rios",
+        "name": "Los Ríos",
         "cityId": 1
     },
     {
@@ -431,7 +431,7 @@ let sectors = [
     },
     {
         "id": 57,
-        "name": "Paraiso",
+        "name": "Paraíso",
         "cityId": 1
     },
     {
@@ -446,7 +446,7 @@ let sectors = [
     },
     {
         "id": 60,
-        "name": "Los Proceres",
+        "name": "Los Próceres",
         "cityId": 1
     },
     {
@@ -466,7 +466,7 @@ let sectors = [
     },
     {
         "id": 64,
-        "name": "San Geronimo",
+        "name": "San Gerónimo",
         "cityId": 1
     },
     {
@@ -476,7 +476,7 @@ let sectors = [
     },
     {
         "id": 66,
-        "name": "Simon Bolivar",
+        "name": "Simón Bolívar",
         "cityId": 1
     },
     {
@@ -486,7 +486,7 @@ let sectors = [
     },
     {
         "id": 68,
-        "name": "Villas Agricolas",
+        "name": "Villas Agrícolas",
         "cityId": 1
     },
     {
@@ -541,12 +541,12 @@ let sectors = [
     },
     {
         "id": 79,
-        "name": "Km. 12 Av. Independecia / Calle Isabel",
+        "name": "Km. 12 Av. Independencia / Calle Isabel",
         "cityId": 2
     },
     {
         "id": 80,
-        "name": "Km. 13 Carretera Sánchez / Av.Independencia",
+        "name": "Km. 13 Carretera Sánchez / Av. Independencia",
         "cityId": 2
     },
     {
@@ -596,7 +596,7 @@ let sectors = [
     },
     {
         "id": 90,
-        "name": "Marañon",
+        "name": "Marañón",
         "cityId": 3
     },
     {
@@ -686,7 +686,7 @@ let sectors = [
     },
     {
         "id": 108,
-        "name": "Ciudad Satelite",
+        "name": "Ciudad Satélite",
         "cityId": 4
     },
     {
@@ -721,7 +721,7 @@ let sectors = [
     },
     {
         "id": 115,
-        "name": "Las Americas",
+        "name": "Las Américas",
         "cityId": 4
     },
     {
@@ -782,7 +782,10 @@ let ValidateValues = {
     store: false,
     provincesField: false,
     citiesField: false,
-    sectorField: false
+    sectorField: false,
+    pointOfReference: false,
+    address: false
+
 }
 
 let headers = {method: 'POST'}
@@ -933,10 +936,12 @@ function CreateUser(){
     let catchError = document.getElementById('fail')
     let nameOfClient = document.getElementById('name').value
     let phone = document.getElementById('phone').value
-    let store = document.getElementById('store').value
+    let storeName = document.getElementById('store').value
     let province = document.getElementById('provincesField').value
     let city = document.getElementById('citiesField').value
     let sector = document.getElementById('sectorField').value
+    let pointOfReference = document.getElementById('pointOfReference').value
+    let address = document.getElementById('address').value
 
     catchError.style.display = "none"
 
@@ -946,7 +951,8 @@ function CreateUser(){
         loader.style.display = "flex";
             
         let url = "https://wbqn8dzqcf.execute-api.us-east-1.amazonaws.com/user"
-        let json = { "owner": nameOfClient, "phone": phone, "storeName": store, "sector": sector, "city": city, "province": province }
+        let json = { "owner": nameOfClient, phone, storeName, sector, city, province, "street": address, "closePoint": pointOfReference }
+        console.log(json)
 
         fetch(url, {
         method: "POST",
@@ -1039,8 +1045,8 @@ function validate(value){
 
     let provinceToCheck = document.getElementById("provincesField").value
     let cityToCheck = document.getElementById("citiesField").value
+    let sectorField = document.getElementById("sectorField").value
 
-    console.log(cityToCheck)
 
     if(cities.find(city => city.name.toLowerCase() == cityToCheck.toLowerCase())){
         document.getElementById('sector-container').style.display = "flex"
@@ -1048,14 +1054,23 @@ function validate(value){
         document.getElementById('sector-container').style.display = "none"
     }
 
+    if(sectors.find(sector => sector.name.toLowerCase() == sectorField.toLowerCase())){
+        document.getElementById('address-container').style.display = "flex"
+        document.getElementById('pointOfReference-container').style.display = "flex"
+    }else{
+        document.getElementById('address-container').style.display = "none"
+        document.getElementById('pointOfReference-container').style.display = "none"
+    }
+
     if(value ==  "citiesField" || value == "sectorField"){
 
         if(provinceToCheck != "Gran Santo Domingo"){
-            
             document.getElementById('citiesField-invalid').style.display = "none"
             document.getElementById('sectorField-invalid').style.display = "none"
             ValidateValues["citiesField"] = true
             ValidateValues["sectorField"] = true
+            ValidateValues["address"] = true
+            ValidateValues["pointOfReference"] = true
 
         }else{
             
@@ -1089,12 +1104,16 @@ function validate(value){
         if(provinceToCheck != "Gran Santo Domingo"){
             ValidateValues["citiesField"] = true
             ValidateValues["sectorField"] = true
+            ValidateValues["address"] = true
+            ValidateValues["pointOfReference"] = true
         }
 
         if(value == "provincesField"){
             if(provinceToCheck == "Gran Santo Domingo"){
                 ValidateValues["citiesField"] = false
                 ValidateValues["sectorField"] = false
+                ValidateValues["address"] = false
+                ValidateValues["pointOfReference"] = false
             }
 
             if(provinces.find(province => province.name.toLowerCase() == provinceToCheck.toLowerCase())){
@@ -1132,16 +1151,24 @@ function clear(){
     document.getElementById('store').value = null
     document.getElementById('citiesField').value = null
     document.getElementById('provincesField').value = null
+    document.getElementById('pointOfReference').value = null
+    document.getElementById('address').value = null
+
     ValidateValues = {
         name: false,
         phone: false,
         store: false,
         provincesField: false,
         citiesField: false,
-        sectorField: false
+        sectorField: false,
+        pointOfReference: false,
+        address: false
     }
     document.getElementById('city-container').style.display = "none"
     document.getElementById('sector-container').style.display = "none"
+    document.getElementById('pointOfReference-container').style.display = "none"
+    document.getElementById('address-container').style.display = "none"
+
 
 }
 

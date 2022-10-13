@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-registracion</title>
+    <title>Pre-registración</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -16,15 +16,15 @@
             <img src="./assets/Jabiya-sign-up.png" alt="">
         </div>
         <div class="header">
-            <span class="description">Introduzca su informacion para crear usuario</span>
+            <span class="description">INTRODUZCA SU INFORMACIÓN PARA CREAR USUARIO</span>
         </div>
         <div class="item">
             <input autocomplete="off" id="name" type="text" onkeyup="validate('name')" placeholder="Tu Nombre">
             <span class="invalid" id="name-invalid">Debe introducir un nombre</span>
         </div>
         <div class="item">
-            <input autocomplete="off" id="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="number" onkeyup="validate('phone')" placeholder="Telefono (809 XXX-XXXX)">
-            <span class="invalid" id="phone-invalid">Introduzca un numero de telefono</span>
+            <input autocomplete="off" id="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="number" onkeyup="validate('phone')" placeholder="Teléfono (809 XXX-XXXX)">
+            <span class="invalid" id="phone-invalid">Introduzca un número de teléfono</span>
 
         </div>
         <div class="item">
@@ -34,19 +34,27 @@
         </div>
         <div class="item">
             <input autocomplete="off" id="provincesField" onclick="showProvinces()"  onkeyup="getProvinces('provincesField')" type="text" placeholder="Provincia">
-            <span class="invalid" id="provincesField-invalid">seleccione una provincia valida</span>
+            <span class="invalid" id="provincesField-invalid">Seleccione una provincia válida</span>
             <ul id="provinces" class="list"></ul>
         </div>
         <div class="item" id="city-container">
             <input autocomplete="off" id="citiesField" onclick="showCities()"  onkeyup="getCities('citiesField')" type="text" placeholder="Ciudad">
-            <span class="invalid" id="citiesField-invalid">seleccione una ciudad valida</span>
+            <span class="invalid" id="citiesField-invalid">Seleccione una ciudad válida</span>
             <ul id="cities" class="list"></ul>
         </div>
         <div class="item" id="sector-container">
             <input autocomplete="off" id="sectorField" onclick="showSectors()" onkeyup="getSectors('sectorField')" type="text" placeholder="Sector">
-            <span class="invalid" id="sectorField-invalid">seleccione un sector valido</span>
+            <span class="invalid" id="sectorField-invalid">Seleccione un sector válido</span>
             <ul id="sectors" class="list">
             </ul>
+        </div>
+        <div class="item" id="address-container">
+            <input autocomplete="off" id="address" type="text" onkeyup="validate('address')" placeholder="Calle y Número">
+            <span class="invalid" id="address-invalid">Introduzca su calle y número </span>
+        </div>
+        <div class="item" id="pointOfReference-container">
+            <input autocomplete="off" id="pointOfReference" type="text" onkeyup="validate('pointOfReference')" placeholder="Punto Cercano de Referencia">
+            <span class="invalid" id="pointOfReference-invalid">introduzca un punto cercano de referencia</span>
         </div>
         <div class="btn">
             <div id="loader" class="loader-container">
@@ -55,11 +63,9 @@
             </div>
             <div id="fail" class="fail-container">
                 <p class="title">Hubo un error al Crear!!</p>
-                <p class="description">Asegurese de su conexion a internet o Intentelo mas tarde</p>
-
+                <p class="description">Asegúrese de su conexión a internet o Inténtelo más tarde</p>
             </div>
             <button onclick="CreateUser()" id="btn_add">Registrarse</button>
-            <!-- <a href="/user.html">Ver Usuario</a> -->
         </div>
     </div>
 

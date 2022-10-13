@@ -321,7 +321,7 @@ button{
     font-weight: 400;
   }
 
-  #city-container, #sector-container{
+  #city-container, #sector-container, #pointOfReference-container, #address-container{
     display: none;
   }
 
